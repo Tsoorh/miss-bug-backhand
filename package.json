@@ -1,0 +1,20 @@
+{
+  "name": "miss-bug-backhand",
+  "version": "1.0.0",
+  "description": "miss bug backhand",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon --ignore \"./data\" server.js "
+  },
+  "author": "Tsoor",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pdfkit": "^0.17.2",
+    "pdfkit-table": "^0.1.99"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "abc123",
+    "title": "Bug0",
+    "severity": 3,
+    "createdAt": 1542107359454
+  },
+  {
+    "_id": "abc484",
+    "title": "Bug2",
+    "severity": 45,
+    "createdAt": 1542107359466
+  },
+  {
+    "_id": "abc447",
+    "title": "Bug3",
+    "severity": 15,
+    "createdAt": 1542107359466
+  },
+  {
+    "_id": "jfc857",
+    "title": "Bug4",
+    "severity": 7,
+    "createdAt": 1542107359466
+  },
+  {
+    "_id": "abc234",
+    "title": "BUG1",
+    "severity": 6,
+    "createdAt": 1542107359466
+  }
+]

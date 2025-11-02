@@ -1,0 +1,83 @@
+31.10.2025, 11:01:34 - ERROR - Error: Cannot find bug to remove
+31.10.2025, 11:01:34 - ERROR - couldn't remove bug abc234 | Error: Cannot find bug to remove
+31.10.2025, 11:02:00 - ERROR - Error: Cannot find bug to remove
+31.10.2025, 11:02:00 - ERROR - couldn't remove bug abc234 | Error: Cannot find bug to remove
+31.10.2025, 11:02:14 - ERROR - Error: Cannot find bug to remove
+31.10.2025, 11:02:14 - ERROR - couldn't remove bug abc234 | Error: Cannot find bug to remove
+31.10.2025, 11:02:36 - ERROR - Error: Cannot find bug to remove
+31.10.2025, 11:02:36 - ERROR - couldn't remove bug abc234 | Error: Cannot find bug to remove
+31.10.2025, 11:02:43 - ERROR - Error: Cannot find bug to remove
+31.10.2025, 11:02:43 - ERROR - couldn't remove bug abc234 | Error: Cannot find bug to remove
+31.10.2025, 11:09:27 - ERROR - Error: Cannot find bug to remove
+31.10.2025, 11:09:27 - ERROR - couldn't remove bug abc234 | Error: Cannot find bug to remove
+31.10.2025, 11:10:48 - ERROR - Error: Cannot find bug
+31.10.2025, 11:10:48 - ERROR - couldn't get bug abc234 | Error: Cannot find bug
+31.10.2025, 13:58:18 - ERROR - ReferenceError: bug is not defined
+1.11.2025, 14:34:08 - ERROR - Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - Error: Cannot find bug
+1.11.2025, 14:34:08 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:35:57 - ERROR - Error: Cannot find bug
+1.11.2025, 14:35:57 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:40:20 - ERROR - Error: Cannot find bug
+1.11.2025, 14:40:20 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:43:37 - ERROR - Error: Cannot find bug
+1.11.2025, 14:43:38 - ERROR - couldn't get bug pdf | Error: Cannot find bug
+1.11.2025, 14:45:23 - ERROR - coudln't create pdf
+1.11.2025, 14:46:59 - ERROR - coudln't create pdf
+1.11.2025, 14:48:31 - ERROR - coudln't create pdf
+1.11.2025, 14:51:12 - ERROR - coudln't create pdf
+1.11.2025, 14:51:33 - ERROR - coudln't create pdf
+1.11.2025, 14:52:33 - ERROR - coudln't create pdf
+1.11.2025, 14:53:23 - ERROR - coudln't create pdf
+1.11.2025, 14:54:47 - ERROR - coudln't create pdf
+1.11.2025, 15:00:47 - ERROR - coudln't create pdf
+1.11.2025, 15:02:46 - ERROR - coudln't create pdf
+1.11.2025, 15:04:15 - ERROR - coudln't create pdf
+1.11.2025, 15:04:20 - ERROR - coudln't create pdf
+1.11.2025, 15:04:51 - ERROR - coudln't create pdf
+1.11.2025, 15:05:05 - ERROR - coudln't create pdf
+1.11.2025, 15:05:19 - ERROR - coudln't create pdf
+1.11.2025, 15:05:28 - ERROR - coudln't create pdf
+1.11.2025, 15:05:37 - ERROR - coudln't create pdf
+1.11.2025, 15:06:06 - ERROR - coudln't create pdf
+1.11.2025, 16:46:20 - ERROR - coudln't create pdf
+1.11.2025, 16:46:41 - ERROR - coudln't create pdf
+1.11.2025, 16:46:55 - ERROR - coudln't create pdf
+1.11.2025, 16:46:58 - ERROR - coudln't create pdf
+1.11.2025, 16:46:59 - ERROR - coudln't create pdf
+1.11.2025, 16:47:00 - ERROR - coudln't create pdf
+1.11.2025, 16:47:01 - ERROR - coudln't create pdf
+1.11.2025, 16:47:03 - ERROR - coudln't create pdf
+1.11.2025, 16:47:26 - ERROR - coudln't create pdf
+1.11.2025, 16:50:50 - ERROR - coudln't create pdf
+1.11.2025, 16:51:10 - ERROR - coudln't create pdf
+1.11.2025, 16:56:36 - ERROR - coudln't create pdf
+1.11.2025, 16:57:19 - ERROR - coudln't create pdf
+1.11.2025, 16:57:40 - ERROR - coudln't create pdf
+1.11.2025, 17:00:10 - ERROR - coudln't create pdf
+1.11.2025, 17:01:52 - ERROR - coudln't create pdf
+1.11.2025, 17:08:56 - ERROR - coudln't create pdf
+1.11.2025, 17:10:06 - ERROR - coudln't create pdf
+1.11.2025, 17:10:44 - ERROR - coudln't create pdf
+1.11.2025, 17:12:56 - ERROR - coudln't create pdf
+1.11.2025, 17:15:10 - ERROR - coudln't create pdf
+1.11.2025, 17:15:30 - ERROR - coudln't create pdf
+1.11.2025, 18:31:58 - ERROR - SyntaxError: Unexpected token 'o', "[object Promise]" is not valid JSON
+2.11.2025, 9:02:55 - ERROR - Error: Cannot find bug
+2.11.2025, 9:02:56 - ERROR - couldn't get bug :bugId | Error: Cannot find bug
+2.11.2025, 9:03:07 - ERROR - Error: Cannot find bug
+2.11.2025, 9:03:07 - ERROR - couldn't get bug bug1 | Error: Cannot find bug
+2.11.2025, 9:03:19 - ERROR - Error: Cannot find bug
+2.11.2025, 9:03:19 - ERROR - couldn't get bug bug1 | Error: Cannot find bug
+2.11.2025, 9:04:03 - ERROR - couldn't get bug abc123 | TypeError: req.cookies is not a function
+2.11.2025, 9:04:08 - ERROR - couldn't get bug abc123 | TypeError: req.cookies is not a function
+2.11.2025, 9:05:26 - ERROR - couldn't get bug abc123 | TypeError: req.cookies.startWith is not a function
+2.11.2025, 11:14:54 - ERROR - couldn't get bug abc123 | ReferenceError: viewedBugs is not defined
+2.11.2025, 11:15:05 - ERROR - couldn't get bug abc123 | ReferenceError: viewedBugs is not defined
+2.11.2025, 11:23:40 - ERROR - couldn't get bug abc447 | TypeError: argument name is invalid
+2.11.2025, 13:28:19 - ERROR - couldn't get bug abc447 | TypeError: option maxAge is invalid
