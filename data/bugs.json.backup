@@ -3,30 +3,56 @@
     "_id": "abc123",
     "title": "Bug0",
     "severity": 3,
-    "createdAt": 1542107359454
-  },
-  {
-    "_id": "abc484",
-    "title": "Bug2",
-    "severity": 45,
-    "createdAt": 1542107359466
+    "description": "asdasdasd",
+    "createdAt": 1542107359454,
+    "labels" : ["critical", "need-CR", "dev-branch"]
   },
   {
     "_id": "abc447",
     "title": "Bug3",
     "severity": 15,
-    "createdAt": 1542107359466
+    "description": "asdasdasd",
+    "createdAt": 1542107359466,
+    "labels" : ["critical", "need-CR", "dev-branch"]
   },
   {
     "_id": "jfc857",
     "title": "Bug4",
     "severity": 7,
-    "createdAt": 1542107359466
+    "description": "asdasdasd",
+    "createdAt": 1542107359466,
+    "labels" : ["critical", "need-CR", "dev-branch"]
   },
   {
     "_id": "abc234",
     "title": "BUG1",
     "severity": 6,
-    "createdAt": 1542107359466
+    "description": "asdasdasd",
+    "createdAt": 1542107359466,
+    "labels" : ["critical", "need-CR", "dev-branch"]
+  },
+  {
+    "_id": "DndCMt",
+    "title": "asd",
+    "severity": 17,
+    "description": "asdasdasd",
+    "createdAt": 1761914072980,
+    "labels" : ["critical", "need-CR", "dev-branch"]
+  },
+  {
+    "_id": "FoTxE0",
+    "title": "buggg",
+    "severity": 200,
+    "description": "best bug alibeeeee",
+    "createdAt": 1761914117772,
+    "labels" : ["critical", "need-CR", "dev-branch"]
+  },
+  {
+    "_id": "fFgYqX",
+    "title": "buggy ",
+    "severity": 18,
+    "description": "bugbug ",
+    "createdAt": 1761995617039,
+    "labels" : ["critical", "need-CR", "dev-branch"]
   }
 ]

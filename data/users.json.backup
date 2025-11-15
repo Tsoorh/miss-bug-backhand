@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "u101",
+    "fullname": "Muki Ja",
+    "username": "muki",
+    "password": "muki1234",
+    "score": 100
+  },
+  {
+    "_id": "u102",
+    "fullname": "Buki Ja",
+    "username": "buki",
+    "password": "buki1234",
+    "score": 50
+  },
+  {
+    "_id": "u103",
+    "fullname": "Luki Ja",
+    "username": "luki",
+    "password": "luki1234",
+    "score": 75
+  },
+  {
+    "_id": "u104",
+    "fullname": "Ruki Ja",
+    "username": "ruki",
+    "password": "ruki1234",
+    "score": 25
+  },
+  {
+    "_id": "u105",
+    "fullname": "Shuki Ja",
+    "username": "shuki",
+    "password": "shuki1234",
+    "score": 70
+  },
+  {
+    "_id": "u106",
+    "fullname": "Kuki Ja",
+    "username": "kuki",
+    "password": "kuki1234",
+    "score": 99
+  }
+]

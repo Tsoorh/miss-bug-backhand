@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "u101",
+        "fullname": "Muki Ja",
+        "username": "muki",
+        "password": "muki1234",
+        "score": 100,
+        "isAdmin":false
+    },
+    {
+        "_id": "u102",
+        "fullname": "Buki Ja",
+        "username": "buki",
+        "password": "buki1234",
+        "score": 60,
+        "isAdmin":false
+    },
+    {
+        "_id": "u103",
+        "fullname": "Luki Ja",
+        "username": "roookiiii",
+        "password": "luki1234",
+        "score": 80,
+        "isAdmin":false
+    },
+    {
+        "_id": "u104",
+        "fullname": "tsoor hartov",
+        "username": "ruki",
+        "password": "ruki1234",
+        "score": 60,
+        "isAdmin":false
+    },
+    {
+        "_id": "u105",
+        "fullname": "Shuki Ja",
+        "username": "shuki",
+        "password": "shuki1234",
+        "score": 70,
+        "isAdmin":false
+    },
+    {
+        "_id": "u106",
+        "fullname": "MULK nulk",
+        "username": "kuki",
+        "password": "kuki1234",
+        "score": 99,
+        "isAdmin":false
+    },
+    {
+        "username": "tsoor",
+        "password": "$2b$10$sXEga.Hu2c5cHBjFVpi0BeDCojXyMdYsZZOdCllcOkknRUfwRSiHu",
+        "fullname": "Tsoor Hartov",
+        "_id": "RjeMo8",
+        "score": 20,
+        "isAdmin":true
+    }
+]

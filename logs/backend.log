@@ -81,3 +81,131 @@
 2.11.2025, 11:15:05 - ERROR - couldn't get bug abc123 | ReferenceError: viewedBugs is not defined
 2.11.2025, 11:23:40 - ERROR - couldn't get bug abc447 | TypeError: argument name is invalid
 2.11.2025, 13:28:19 - ERROR - couldn't get bug abc447 | TypeError: option maxAge is invalid
+7.11.2025, 14:02:13 - ERROR - ReferenceError: big1 is not defined
+7.11.2025, 14:02:14 - ERROR - ReferenceError: big1 is not defined
+8.11.2025, 16:19:53 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+8.11.2025, 16:19:54 - ERROR - Error: Cannot find userby id
+8.11.2025, 16:20:10 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+8.11.2025, 16:20:10 - ERROR - Error: Cannot find userby id
+8.11.2025, 16:20:45 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+8.11.2025, 16:20:45 - ERROR - Error: Cannot find userby id
+8.11.2025, 16:21:19 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+8.11.2025, 16:21:19 - ERROR - Error: Cannot find userby id
+8.11.2025, 16:22:02 - ERROR - ReferenceError: params is not defined
+8.11.2025, 16:22:36 - ERROR - Error: Cannot find userby id
+8.11.2025, 16:22:36 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+8.11.2025, 19:29:23 - ERROR - TypeError: Cannot destructure property 'user' of 'req.body' as it is undefined.
+8.11.2025, 19:30:19 - ERROR - TypeError: Cannot destructure property 'user' of 'req.body' as it is undefined.
+8.11.2025, 19:32:58 - ERROR - TypeError: Cannot destructure property 'user' of 'req.body' as it is undefined.
+8.11.2025, 19:34:00 - ERROR - TypeError: Cannot destructure property 'user' of 'req.body' as it is undefined.
+8.11.2025, 19:34:19 - ERROR - TypeError: Cannot destructure property 'user' of 'req.body' as it is undefined.
+8.11.2025, 19:36:13 - ERROR - TypeError: Cannot destructure property 'user' of 'req.body' as it is undefined.
+8.11.2025, 19:37:48 - ERROR - SyntaxError: "undefined" is not valid JSON
+8.11.2025, 19:39:06 - ERROR - SyntaxError: "[object Object]" is not valid JSON
+8.11.2025, 19:39:20 - ERROR - Cannot save user  | TypeError: Cannot read properties of undefined (reading '_id')
+8.11.2025, 19:39:20 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+8.11.2025, 19:39:59 - ERROR - Cannot save user  | TypeError: Cannot read properties of undefined (reading '_id')
+8.11.2025, 19:39:59 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+8.11.2025, 19:45:10 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:45:10 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:46:09 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:46:09 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:46:41 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:46:41 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:47:56 - ERROR - Error: Cannot find bug to remove
+8.11.2025, 19:47:56 - ERROR - Error: Cannot find bug to remove
+9.11.2025, 17:07:30 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:07:30 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:07:58 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:07:58 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:09:48 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:09:48 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:09:53 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:09:53 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:15:33 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:15:33 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:16:07 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:16:07 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:26:51 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:26:51 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:27:09 - ERROR - cannot find user id : :undefined | Error: Cannot find userby id
+9.11.2025, 17:27:09 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:37:37 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+9.11.2025, 17:37:37 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:37:41 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+9.11.2025, 17:37:41 - ERROR - Error: Cannot find userby id
+9.11.2025, 17:37:44 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+9.11.2025, 17:37:44 - ERROR - Error: Cannot find userby id
+9.11.2025, 18:17:11 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 18:17:11 - ERROR - Cannot save user  | TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:25:18 - ERROR - Cannot save user  | TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:25:18 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:26:33 - ERROR - Cannot save user  | TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:26:33 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:27:54 - ERROR - TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:27:54 - ERROR - Cannot save user  | TypeError: Cannot read properties of undefined (reading '_id')
+9.11.2025, 19:30:38 - ERROR - ReferenceError: user is not defined
+9.11.2025, 19:32:04 - ERROR - ReferenceError: user is not defined
+9.11.2025, 19:32:47 - ERROR - ReferenceError: user is not defined
+9.11.2025, 19:34:41 - ERROR - ReferenceError: user is not defined
+9.11.2025, 19:36:09 - ERROR - ReferenceError: user is not defined
+9.11.2025, 19:42:37 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+9.11.2025, 19:42:37 - ERROR - Error: Cannot find userby id
+15.11.2025, 10:03:15 - ERROR - couldn't register  | Username already exist !
+15.11.2025, 10:04:09 - ERROR - couldn't register  | Username already exist !
+15.11.2025, 10:04:23 - INFO - User signup -  | {"username":"tsoor","password":"$2b$10$sXEga.Hu2c5cHBjFVpi0BeDCojXyMdYsZZOdCllcOkknRUfwRSiHu","fullname":"Tsoor Hartov","_id":"RjeMo8","score":20}
+15.11.2025, 10:05:15 - ERROR - couldn't register  | Username already exist !
+15.11.2025, 10:08:06 - INFO - User login: [object Object]
+15.11.2025, 10:08:15 - INFO - User login: [object Object]
+15.11.2025, 10:08:33 - INFO - User login: [object Object]
+15.11.2025, 10:08:39 - INFO - User login: [object Object]
+15.11.2025, 10:08:46 - INFO - User login: [object Object]
+15.11.2025, 10:08:59 - INFO - User login: [object Object]
+15.11.2025, 10:41:05 - INFO - User login: [object Object]
+15.11.2025, 10:41:23 - INFO - User login: [object Object]
+15.11.2025, 10:41:43 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:41:56 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:43:18 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:44:27 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:46:03 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:46:30 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:46:58 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:47:14 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:48:16 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:48:32 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:49:17 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:50:11 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:50:24 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:50:33 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:50:34 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:54:54 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:55:06 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:55:47 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:57:16 - INFO - User login: [object Object]
+15.11.2025, 10:57:24 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 10:57:36 - INFO - User login: [object Object]
+15.11.2025, 10:58:09 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+15.11.2025, 11:07:16 - ERROR - couldn't login  | Invalid username or password
+15.11.2025, 11:07:24 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+15.11.2025, 13:03:04 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+15.11.2025, 13:17:54 - ERROR - ReferenceError: req is not defined
+15.11.2025, 13:18:57 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+15.11.2025, 13:18:57 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+15.11.2025, 13:20:30 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+15.11.2025, 13:20:51 - ERROR - ReferenceError: req is not defined
+15.11.2025, 13:37:57 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+15.11.2025, 13:37:57 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+15.11.2025, 13:40:25 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+15.11.2025, 14:34:57 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+15.11.2025, 14:35:46 - ERROR - couldn't remove bug DndCMt | TypeError: bugService.getBug is not a function
+15.11.2025, 14:37:24 - ERROR - couldn't remove bug DndCMt | No permission to remove!
+15.11.2025, 14:38:05 - ERROR - couldn't remove bug DndCMt | No permission to remove!
+15.11.2025, 14:38:42 - ERROR - ReferenceError: req is not defined
+15.11.2025, 14:38:42 - ERROR - couldn't remove bug DndCMt | ReferenceError: req is not defined
+15.11.2025, 14:39:50 - ERROR - ReferenceError: req is not defined
+15.11.2025, 14:39:50 - ERROR - couldn't remove bug DndCMt | ReferenceError: req is not defined
+15.11.2025, 17:37:57 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+15.11.2025, 17:37:57 - ERROR - Error: Cannot find userby id
+15.11.2025, 17:38:24 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+15.11.2025, 17:38:24 - ERROR - Error: Cannot find userby id
+15.11.2025, 19:40:26 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}

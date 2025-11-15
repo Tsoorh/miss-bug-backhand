@@ -6,13 +6,16 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon --ignore \"./data\" server.js "
+    "start": "set PORT=3030 & nodemon --ignore \"./data\" server.js"
   },
   "author": "Tsoor",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "cryptr": "^6.4.0",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "pdfkit": "^0.17.2",
     "pdfkit-table": "^0.1.99"
