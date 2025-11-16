@@ -5,7 +5,7 @@
         "username": "muki",
         "password": "muki1234",
         "score": 100,
-        "isAdmin":false
+        "isAdmin": false
     },
     {
         "_id": "u102",
@@ -13,7 +13,7 @@
         "username": "buki",
         "password": "buki1234",
         "score": 60,
-        "isAdmin":false
+        "isAdmin": false
     },
     {
         "_id": "u103",
@@ -21,7 +21,7 @@
         "username": "roookiiii",
         "password": "luki1234",
         "score": 80,
-        "isAdmin":false
+        "isAdmin": false
     },
     {
         "_id": "u104",
@@ -29,7 +29,7 @@
         "username": "ruki",
         "password": "ruki1234",
         "score": 60,
-        "isAdmin":false
+        "isAdmin": false
     },
     {
         "_id": "u105",
@@ -37,7 +37,7 @@
         "username": "shuki",
         "password": "shuki1234",
         "score": 70,
-        "isAdmin":false
+        "isAdmin": false
     },
     {
         "_id": "u106",
@@ -45,7 +45,7 @@
         "username": "kuki",
         "password": "kuki1234",
         "score": 99,
-        "isAdmin":false
+        "isAdmin": false
     },
     {
         "username": "tsoor",
@@ -53,6 +53,38 @@
         "fullname": "Tsoor Hartov",
         "_id": "RjeMo8",
         "score": 20,
-        "isAdmin":true
+        "isAdmin": true
+    },
+    {
+        "fullname": "michaela",
+        "username": "michaH",
+        "password": "$2b$10$7Jlxd/bqUTzdZxas0Y7nEeuKy5gR1FpvfaB1Rw/ZJbxU3p6HAOrxy",
+        "_id": "xgYcoL",
+        "isAdmin": false,
+        "score": 20
+    },
+    {
+        "fullname": "tsoortext",
+        "username": "ts",
+        "password": "$2b$10$3mZUt1XrDUjaeqUC59VaAe2nBteEXWcXbsBtOUgCQmIG26YPDJqMe",
+        "_id": "OvpZbq",
+        "isAdmin": false,
+        "score": 20
+    },
+    {
+        "fullname": "tsoor",
+        "username": "asd",
+        "password": "$2b$10$ZPgbx7/TjUYNAMacOe6OGuwQPc0VQ5w5ewlDzlns0L5HWVWJ8ITPy",
+        "_id": "A8Y72Y",
+        "isAdmin": false,
+        "score": 20
+    },
+    {
+        "fullname": "MICHAELA",
+        "username": "michah",
+        "password": "$2b$10$HVTbu29xVjoEkb0Bd8AxVOFp/7S1sEtDv5Yghn1BjCnUbpFT60b46",
+        "_id": "t7Uo3K",
+        "isAdmin": false,
+        "score": 20
     }
 ]

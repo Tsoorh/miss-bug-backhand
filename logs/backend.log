@@ -209,3 +209,21 @@
 15.11.2025, 17:38:24 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
 15.11.2025, 17:38:24 - ERROR - Error: Cannot find userby id
 15.11.2025, 19:40:26 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 11:07:49 - ERROR - couldn't register  | Missing required signup information
+16.11.2025, 11:14:05 - ERROR - couldn't register  | Missing required signup information
+16.11.2025, 11:14:57 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 11:27:59 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 11:34:09 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 11:39:46 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 19:16:10 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 19:19:19 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 19:19:56 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 19:20:11 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 19:20:44 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 19:21:21 - INFO - User signup -  | {"fullname":"michaela","username":"michaH","password":"$2b$10$7Jlxd/bqUTzdZxas0Y7nEeuKy5gR1FpvfaB1Rw/ZJbxU3p6HAOrxy","_id":"xgYcoL","isAdmin":false,"score":20}
+16.11.2025, 19:23:46 - INFO - User signup -  | {"fullname":"tsoortext","username":"ts","password":"$2b$10$3mZUt1XrDUjaeqUC59VaAe2nBteEXWcXbsBtOUgCQmIG26YPDJqMe","_id":"OvpZbq","isAdmin":false,"score":20}
+16.11.2025, 19:27:51 - INFO - User signup -  | {"fullname":"tsoor","username":"asd","password":"$2b$10$ZPgbx7/TjUYNAMacOe6OGuwQPc0VQ5w5ewlDzlns0L5HWVWJ8ITPy","_id":"A8Y72Y","isAdmin":false,"score":20}
+16.11.2025, 19:29:43 - INFO - User signup -  | {"fullname":"MICHAELA","username":"michah","password":"$2b$10$HVTbu29xVjoEkb0Bd8AxVOFp/7S1sEtDv5Yghn1BjCnUbpFT60b46","_id":"t7Uo3K","isAdmin":false,"score":20}
+16.11.2025, 19:29:58 - INFO - User login: {"_id":"t7Uo3K","fullname":"MICHAELA","score":20}
+16.11.2025, 19:30:30 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+16.11.2025, 20:06:01 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
