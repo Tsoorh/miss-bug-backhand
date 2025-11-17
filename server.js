@@ -49,10 +49,10 @@ app.get("/set-cookies", async (req, res) => {
   }
 });
 
-//* For SPA (Single Page Application) - catch all routes and send to the index.html
-// app.get('/*all', (req, res) => {
-//     res.sendFile(path.resolve('public/index.html'))
-// })
+// * For SPA (Single Page Application) - catch all routes and send to the index.html
+app.get('/*all', (req, res) => {
+    res.sendFile(path.resolve('public/index.html'))
+})
 const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`Server ready at port ${port}` ));
 
