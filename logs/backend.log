@@ -227,3 +227,56 @@
 16.11.2025, 19:29:58 - INFO - User login: {"_id":"t7Uo3K","fullname":"MICHAELA","score":20}
 16.11.2025, 19:30:30 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
 16.11.2025, 20:06:01 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+17.11.2025, 14:27:36 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+17.11.2025, 17:55:39 - ERROR - couldn't login  | Invalid username or password
+17.11.2025, 17:56:00 - ERROR - couldn't login  | Invalid username or password
+17.11.2025, 17:56:24 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+17.11.2025, 18:01:58 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20}
+17.11.2025, 18:14:43 - ERROR - couldn't login  | Invalid username or password
+17.11.2025, 18:15:11 - INFO - User signup -  | {"fullname":"mich","username":"michi","password":"$2b$10$508KaTxAmAfWzEUxsbbtYuL1aqaD4ovols7kK8U1dYvKVtqB3Xfoq","_id":"KT77dF","isAdmin":false,"score":20}
+17.11.2025, 18:15:15 - ERROR - couldn't remove bug abc447 | No permission to remove!
+17.11.2025, 18:15:45 - ERROR - couldn't remove bug abc234 | No permission to remove!
+17.11.2025, 18:18:31 - INFO - User signup -  | {"fullname":"admin","username":"admin","password":"$2b$10$bmW8QAyUBEKd6SXHa8Jt8elI9SqsiD6ucDQ66CF../SVP6eoYRK8m","_id":"qxEJdc","isAdmin":false,"score":20}
+17.11.2025, 18:28:23 - INFO - User login: {"_id":"qxEJdc","fullname":"admin","score":20,"isAdmin":true}
+17.11.2025, 18:29:07 - INFO - User login: {"_id":"qxEJdc","fullname":"admin","score":20,"isAdmin":true}
+17.11.2025, 18:29:23 - ERROR - couldn't login  | Unknown user
+17.11.2025, 19:31:34 - INFO - User login: {"_id":"qxEJdc","fullname":"admin","score":20,"isAdmin":true}
+17.11.2025, 19:31:37 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+17.11.2025, 19:32:47 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+17.11.2025, 19:32:47 - ERROR - Error: Cannot find userby id
+17.11.2025, 19:33:05 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20,"isAdmin":false}
+17.11.2025, 19:33:11 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 19:33:18 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+17.11.2025, 19:33:18 - ERROR - Error: Cannot find userby id
+17.11.2025, 19:33:28 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 19:33:33 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 19:33:37 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 19:33:50 - INFO - User login: {"_id":"qxEJdc","fullname":"admin","score":20,"isAdmin":true}
+17.11.2025, 19:33:55 - ERROR - cannot find user id : undefined | Error: Cannot find userby id
+17.11.2025, 19:33:55 - ERROR - Error: Cannot find userby id
+17.11.2025, 19:41:46 - ERROR - TypeError: Cannot read properties of undefined (reading 'length')
+17.11.2025, 19:41:58 - ERROR - TypeError: Cannot read properties of undefined (reading 'length')
+17.11.2025, 19:42:33 - ERROR - TypeError: Cannot read properties of undefined (reading 'length')
+17.11.2025, 19:43:50 - ERROR - couldn't login  | Invalid username or password
+17.11.2025, 19:44:02 - ERROR - couldn't login  | Invalid username or password
+17.11.2025, 19:44:16 - ERROR - couldn't login  | Unknown user
+17.11.2025, 19:45:58 - ERROR - couldn't register  | Username already exist !
+17.11.2025, 19:46:51 - ERROR - couldn't register  | Username already exist !
+17.11.2025, 19:48:44 - INFO - User signup -  | {"fullname":"moon","username":"moon","password":"$2b$10$rA5YpVa0E9rfQpdf7fthbuJz1MVzlJX.EQc6Oc../8MOOXl01./.K","_id":"auBf2f","isAdmin":false,"score":20}
+17.11.2025, 19:49:16 - INFO - User login: {"_id":"qxEJdc","fullname":"admin","score":20,"isAdmin":true}
+17.11.2025, 19:49:23 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 19:54:24 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 20:19:02 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+17.11.2025, 20:19:43 - ERROR - couldn't login  | Unknown user
+17.11.2025, 20:19:59 - ERROR - couldn't login  | Unknown user
+17.11.2025, 20:20:22 - ERROR - couldn't login  | Unknown user
+17.11.2025, 20:21:36 - INFO - User signup -  | {"fullname":"moon","username":"moon","password":"$2b$10$4oYtiA9tlmlSUV3..szLg.DtQmaQ/K7v.XvsBCuaxwFJPJ6I.Id/u","_id":"sk1H9O","isAdmin":false,"score":20}
+17.11.2025, 20:22:28 - ERROR - couldn't remove bug PMQt37 | No permission to remove!
+17.11.2025, 20:22:54 - ERROR - couldn't login  | Unknown user
+17.11.2025, 20:23:06 - ERROR - couldn't login  | Unknown user
+17.11.2025, 20:23:52 - INFO - User signup -  | {"fullname":"admin","username":"admin","password":"$2b$10$/uZarBKkLjE.WV90MvmCjuEEtCA7lJ5fVtVbX0lj9VX.ld9ZQoZau","_id":"0N8Gna","isAdmin":false,"score":20}
+17.11.2025, 20:24:23 - INFO - User login: {"_id":"0N8Gna","fullname":"admin","score":20,"isAdmin":false}
+17.11.2025, 20:24:57 - INFO - User login: {"_id":"0N8Gna","fullname":"admin","score":20,"isAdmin":true}
+17.11.2025, 20:25:05 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+17.11.2025, 20:28:41 - INFO - User signup -  | {"fullname":"moon","username":"moon","password":"$2b$10$./rLerFxCtD8PtMPVo1rou5MODY.NlFKR1vOqCeCKXGRj602HRBYu","_id":"feNN3j","isAdmin":false,"score":20}
+17.11.2025, 20:29:15 - INFO - User login: {"_id":"0N8Gna","fullname":"admin","score":20,"isAdmin":true}

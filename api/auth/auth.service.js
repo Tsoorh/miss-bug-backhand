@@ -6,7 +6,7 @@ import Cryptr from "cryptr";
 import { loggerService } from "../../services/logger.service.js";
 import { UserService } from "../user/user.service.js";
 
-const cryptr = new Cryptr(process.env.SECRET1||'SecretBYtsoor');
+const cryptr = new Cryptr(process.env.SECRET1 || 'SecretBYtsoor');
 
 export const authService = {
   login,
@@ -37,23 +37,24 @@ async function login(username, password) {
   const userExist = await UserService.getByUser(username);
   if (!userExist) throw "Unknown user";
 
-  const match = await bcrypt.compare(password,userExist.password);
+  const match = await bcrypt.compare(password, userExist.password);
   if (!match) throw "Invalid username or password";
 
   const miniUser = {
     _id: userExist._id,
     fullname: userExist.fullname,
     score: userExist.score,
+    isAdmin: userExist.isAdmin
   };
   return miniUser;
 }
 
 async function signup(credentials) {
   const saltRounds = 10;
-  const {username,password,fullname} = credentials
-    if(!username|| !password || !fullname) throw 'Missing required signup information'
+  const { username, password, fullname } = credentials
+  if (!username || !password || !fullname) throw 'Missing required signup information'
 
-  const userExist =await UserService.getByUser(username);
+  const userExist = await UserService.getByUser(username);
   console.log("🚀 ~ signup ~ userExist:", userExist)
   if (userExist) throw "Username already exist !";
 

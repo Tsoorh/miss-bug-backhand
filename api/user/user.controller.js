@@ -42,7 +42,7 @@ export async function removeUser(req,res) {
         res.send(`Removed successfully, bug Id - ${userId}`);
     } catch (err) {
         loggerService.error(err);
-        res.status(400).send(`Cannot remove bug  ${userId}`);
+        res.status(400).send(`Cannot remove bug `);
     }
     
 }

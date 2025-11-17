@@ -45,13 +45,10 @@ export async function getBug(req, res) {
 export async function removeBug(req, res) {
   const { bugId } = req.params;
   const loggedinUser = req.loggedinUser;
-  console.log("🚀 ~ removeBug ~ loggedinUser:", loggedinUser)
-
   
   try {
     const currentBug = await bugService.getById(bugId)
-    console.log("🚀 ~ removeBug ~ currentBug:", currentBug)
-    if (currentBug.creator._id !== loggedinUser._id) throw 'No permission to remove!'
+    if (currentBug.creator._id !== loggedinUser._id && !loggedinUser.isAdmin) throw 'No permission to remove!'
 
     await bugService.remove(bugId);
     res.send("Removed successfully");
@@ -62,8 +59,8 @@ export async function removeBug(req, res) {
 }
 
 export async function saveBug(req, res) {
-  const {loggedinUser} = req;
-  if(loggedinUser._id !== req.body.creator._id) throw 'No permission to save bug'
+  const {loggedinUser} = req;  
+  if(loggedinUser._id !== req.body.creator._id && !loggedinUser.isAdmin) throw 'No permission to save bug'
 
   const bugToSave = {
     _id: req.body._id || null,

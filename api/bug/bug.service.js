@@ -45,16 +45,16 @@ async function query(filterBy = {}, sort = {}, pageIdx = 0) {
       });
     }
     if (filterBy) {
-      if (filterBy.txt) {
+      if (filterBy?.txt) {
         const regExp = new RegExp(filterBy.txt, "i");
         bugsToDisplay = bugsToDisplay.filter((bug) => regExp.test(bug.title));
       }
-      if (filterBy.severity) {
+      if (filterBy?.severity) {
         bugsToDisplay = bugsToDisplay.filter(
           (bug) => bug.severity >= filterBy.severity
         );
       }
-      if (filterBy.labels.length > 0) {
+      if (filterBy.labels?.length > 0) {
         bugsToDisplay = bugsToDisplay.filter((bug) =>
           filterBy.labels.every((label) => bug.labels.includes(label))
         );
@@ -126,7 +126,6 @@ async function createPDF(res) {
 async function getThreeIds() {
   const b3 = bugs.slice(0, 3);
   const b3Id = b3.map((b) => b._id);
-  console.log("🚀 ~ getThreeIds ~  b3Id:", JSON.stringify(b3Id));
 
   return b3Id;
 }

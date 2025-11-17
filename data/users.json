@@ -53,7 +53,7 @@
         "fullname": "Tsoor Hartov",
         "_id": "RjeMo8",
         "score": 20,
-        "isAdmin": true
+        "isAdmin": false
     },
     {
         "fullname": "michaela",
@@ -84,6 +84,30 @@
         "username": "michah",
         "password": "$2b$10$HVTbu29xVjoEkb0Bd8AxVOFp/7S1sEtDv5Yghn1BjCnUbpFT60b46",
         "_id": "t7Uo3K",
+        "isAdmin": false,
+        "score": 20
+    },
+    {
+        "fullname": "mich",
+        "username": "michi",
+        "password": "$2b$10$508KaTxAmAfWzEUxsbbtYuL1aqaD4ovols7kK8U1dYvKVtqB3Xfoq",
+        "_id": "KT77dF",
+        "isAdmin": false,
+        "score": 20
+    },
+    {
+        "fullname": "admin",
+        "username": "admin",
+        "password": "$2b$10$/uZarBKkLjE.WV90MvmCjuEEtCA7lJ5fVtVbX0lj9VX.ld9ZQoZau",
+        "_id": "0N8Gna",
+        "isAdmin": true,
+        "score": 20
+    },
+    {
+        "fullname": "moon",
+        "username": "moon",
+        "password": "$2b$10$./rLerFxCtD8PtMPVo1rou5MODY.NlFKR1vOqCeCKXGRj602HRBYu",
+        "_id": "feNN3j",
         "isAdmin": false,
         "score": 20
     }

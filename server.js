@@ -39,7 +39,6 @@ app.use('/api/auth',authRoutes)
 //cookies request
 app.get("/set-cookies", async (req, res) => {
   try {
-    console.log("req.cookies", req.cookies);
     const viewedBugs = await bugService.getThreeIds();
     res.cookie("visitedBugs", viewedBugs);
     res.send("cookie SET!");
