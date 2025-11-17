@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "set PORT=3030 & nodemon --ignore \"./data\" server.js"
+   
+    "start": "node server.js"
   },
   "author": "Tsoor",
   "license": "ISC",

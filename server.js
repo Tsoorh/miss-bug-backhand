@@ -18,6 +18,7 @@ const corsOptions = {
 };
 
 // middlewares
+app.use(express.static('public'));
 app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
@@ -52,5 +53,8 @@ app.get("/set-cookies", async (req, res) => {
 // app.get('/*all', (req, res) => {
 //     res.sendFile(path.resolve('public/index.html'))
 // })
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log(`Server ready at port ${port}` ));
 
-app.listen(3030, () => console.log("Server ready at port 3030"));
+
+// for package.json -> script:  // "start": "set PORT=3030 & nodemon --ignore \"./data\" server.js"
