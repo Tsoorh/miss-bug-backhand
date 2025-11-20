@@ -4,14 +4,16 @@ import { bugService } from "./bug.service.js";
 
 export async function getBugs(req, res) {
   const { sortBy, sortDir, pageIdx, txt, severity, labels } = req.query;
-  const sort = { sortBy: sortBy, sortDir: sortDir };
+  const sort = { sortBy, sortDir: +sortDir };
   const filterBy = {
-    txt: txt,
-    severity: severity,
-    labels: labels || []
+    txt: txt || '',
+    severity: +severity || 0,
+    labels: labels || [],
+    pageIdx: +pageIdx || undefined
   };
   try {
-    const bugs = await bugService.query(filterBy,sort,pageIdx);
+
+    const bugs = await bugService.query(filterBy, sort);
     res.send(bugs);
   } catch (err) {
     loggerService.error(err);
@@ -45,7 +47,7 @@ export async function getBug(req, res) {
 export async function removeBug(req, res) {
   const { bugId } = req.params;
   const loggedinUser = req.loggedinUser;
-  
+
   try {
     const currentBug = await bugService.getById(bugId)
     if (currentBug.creator._id !== loggedinUser._id && !loggedinUser.isAdmin) throw 'No permission to remove!'
@@ -59,8 +61,8 @@ export async function removeBug(req, res) {
 }
 
 export async function saveBug(req, res) {
-  const {loggedinUser} = req;  
-  if(loggedinUser._id !== req.body.creator._id && !loggedinUser.isAdmin) throw 'No permission to save bug'
+  const { loggedinUser } = req;
+  if (loggedinUser._id !== req.body.creator._id && !loggedinUser.isAdmin) throw 'No permission to save bug'
 
   const bugToSave = {
     _id: req.body._id || null,
@@ -69,9 +71,9 @@ export async function saveBug(req, res) {
     description: req.body.description,
     createdAt: +req.body.createdAt,
     labels: req.body.labels,
-    creator:{
-      _id:req.body.creator._id || null,
-      fullname:req.body.creator.fullname || null
+    creator: {
+      _id: req.body.creator._id || null,
+      fullname: req.body.creator.fullname || null
     }
   };
   try {

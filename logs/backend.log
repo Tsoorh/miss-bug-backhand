@@ -280,3 +280,103 @@
 17.11.2025, 20:25:05 - ERROR - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 17.11.2025, 20:28:41 - INFO - User signup -  | {"fullname":"moon","username":"moon","password":"$2b$10$./rLerFxCtD8PtMPVo1rou5MODY.NlFKR1vOqCeCKXGRj602HRBYu","_id":"feNN3j","isAdmin":false,"score":20}
 17.11.2025, 20:29:15 - INFO - User login: {"_id":"0N8Gna","fullname":"admin","score":20,"isAdmin":true}
+20.11.2025, 18:35:31 - ERROR - Error: Cannot find bug
+20.11.2025, 18:35:31 - ERROR - couldn't get bug sortBy='title',sortDir='1' | Error: Cannot find bug
+20.11.2025, 19:37:19 - ERROR - Cannot connect to DB
+20.11.2025, 19:37:19 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:37:19 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:37:19 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:38:35 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:38:35 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:38:35 - ERROR - Cannot connect to DB
+20.11.2025, 19:38:35 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:38:59 - ERROR - Cannot connect to DB
+20.11.2025, 19:38:59 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:38:59 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:38:59 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:41:37 - ERROR - Cannot connect to DB
+20.11.2025, 19:41:37 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:41:37 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:41:37 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:42:29 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:42:29 - ERROR - Cannot connect to DB
+20.11.2025, 19:42:29 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:42:29 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:46:02 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:46:02 - ERROR - Cannot connect to DB
+20.11.2025, 19:46:02 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:46:02 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:47:57 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:47:57 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:47:57 - ERROR - Cannot connect to DB
+20.11.2025, 19:47:57 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:48:52 - ERROR - Cannot connect to DB
+20.11.2025, 19:48:52 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:48:52 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:48:52 - ERROR - TypeError: Cannot read properties of undefined (reading 'startsWith')
+20.11.2025, 19:49:15 - ERROR - Cannot connect to DB
+20.11.2025, 19:49:15 - ERROR - Couldn't connct to Mongo collection
+20.11.2025, 19:49:15 - ERROR - MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+20.11.2025, 19:49:15 - ERROR - MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+20.11.2025, 19:56:45 - ERROR - MongoInvalidArgumentError: Invalid sort direction: "'1'"
+20.11.2025, 19:56:45 - ERROR - MongoInvalidArgumentError: Invalid sort direction: "'1'"
+20.11.2025, 19:59:10 - ERROR - MongoInvalidArgumentError: Invalid sort direction: "'1'"
+20.11.2025, 19:59:10 - ERROR - MongoInvalidArgumentError: Invalid sort direction: "'1'"
+20.11.2025, 19:59:54 - ERROR - MongoInvalidArgumentError: Invalid sort direction: "'1'"
+20.11.2025, 19:59:54 - ERROR - MongoInvalidArgumentError: Invalid sort direction: "'1'"
+20.11.2025, 20:00:06 - ERROR - MongoInvalidArgumentError: Invalid sort direction: null
+20.11.2025, 20:00:06 - ERROR - MongoInvalidArgumentError: Invalid sort direction: null
+20.11.2025, 20:01:02 - ERROR - MongoInvalidArgumentError: Invalid sort direction: null
+20.11.2025, 20:01:02 - ERROR - MongoInvalidArgumentError: Invalid sort direction: null
+20.11.2025, 20:01:30 - ERROR - TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20.11.2025, 20:03:25 - ERROR - TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20.11.2025, 20:04:09 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:04:09 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:04:54 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:04:54 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:05:59 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:05:59 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:06:28 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:06:28 - ERROR - ReferenceError: pageIdx is not defined
+20.11.2025, 20:10:13 - ERROR - TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20.11.2025, 20:20:42 - ERROR - TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20.11.2025, 20:22:07 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:22:24 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:22:37 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:22:37 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:23:53 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:23:53 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:24:41 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:24:41 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:25:15 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:25:15 - ERROR - MongoServerError: $regex has to be a string
+20.11.2025, 20:31:14 - ERROR - TypeError: Class constructor ObjectId cannot be invoked without 'new'
+20.11.2025, 20:31:14 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+20.11.2025, 20:32:09 - ERROR - TypeError: collection.findOne is not a function
+20.11.2025, 20:32:09 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
+20.11.2025, 20:32:58 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
+20.11.2025, 20:32:58 - ERROR - TypeError: collection.findOne is not a function
+20.11.2025, 20:35:09 - ERROR - TypeError: collection.findOne is not a function
+20.11.2025, 20:35:09 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
+20.11.2025, 20:35:43 - ERROR - TypeError: collection.findOne is not a function
+20.11.2025, 20:35:43 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
+20.11.2025, 20:35:51 - ERROR - TypeError: collection.findOne is not a function
+20.11.2025, 20:35:51 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
+20.11.2025, 20:37:48 - ERROR - TypeError: collection.findOne is not a function
+20.11.2025, 20:37:48 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function

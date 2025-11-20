@@ -5,8 +5,11 @@ import {
   writeJsonFile,
   writePDF,
 } from "../../services/utils.js";
+import { dbService } from "../../services/db.service.js";
+import { ObjectId } from "mongodb";
 
-const bugs = readJsonFile("./data/bugs.json");
+
+const COLLECTION = 'bug'
 const PAGE_SIZE = 4;
 
 export const bugService = {
@@ -18,54 +21,22 @@ export const bugService = {
   getThreeIds,
 };
 
-async function query(filterBy = {}, sort = {}, pageIdx = 0) {
-  let bugsToDisplay = bugs;
+async function query(filterBy = {}, sortBy = {}) {
 
-  const sortProps = ["title", "severity", "createdAt"];
+
   try {
-    if (sort.sortBy && sortProps.includes(sort.sortBy)) {
-      const sortParam = sort.sortBy;
-      const sortDir = +sort.sortDir || 1;
-
-      bugsToDisplay.sort((bug1, bug2) => {
-        const val1 = bug1[sortParam];
-        const val2 = bug2[sortParam];
-
-        let compare;
-
-        if (typeof val1 === "string") {
-          compare = val1
-            .toLowerCase()
-            .trim()
-            .localeCompare(val2.toLowerCase().trim());
-        } else {
-          compare = val1 - val2;
-        }
-        return compare * sortDir;
-      });
+    const criteria = _buildCriteria(filterBy)
+    const sort = _buildSort(sortBy)
+    const collection = await dbService.getCollection(COLLECTION)
+    let bugsCurser = await collection.find(criteria,{sort}) // {sort} equals {sort:sort}     
+    
+    if (filterBy?.pageIdx !== undefined){
+      const pagination = _buildPagination(pageIdx)
+      bugsCurser =await bugs.skip(pagination.skip).limit(pagination.limit)
     }
-    if (filterBy) {
-      if (filterBy?.txt) {
-        const regExp = new RegExp(filterBy.txt, "i");
-        bugsToDisplay = bugsToDisplay.filter((bug) => regExp.test(bug.title));
-      }
-      if (filterBy?.severity) {
-        bugsToDisplay = bugsToDisplay.filter(
-          (bug) => bug.severity >= filterBy.severity
-        );
-      }
-      if (filterBy.labels?.length > 0) {
-        bugsToDisplay = bugsToDisplay.filter((bug) =>
-          filterBy.labels.every((label) => bug.labels.includes(label))
-        );
-      }
-    }
-    if (pageIdx) {
-      const startIdx = pageIdx * PAGE_SIZE;
-      bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE);
-    }
-
-    return bugsToDisplay;
+    const bugs = await bugsCurser.toArray();
+    
+    return bugs
   } catch (err) {
     loggerService.error(err);
     throw err;
@@ -73,7 +44,8 @@ async function query(filterBy = {}, sort = {}, pageIdx = 0) {
 }
 async function getById(bugId) {
   try {
-    const bug = bugs.find((bug) => bug._id === bugId);
+    const collection = await dbService.getCollection(COLLECTION)
+    let bug = await collection.findOne({"_id":ObjectId.createFromHexString(bugId)})
     if (!bug) throw new Error("Cannot find bug");
     return bug;
   } catch (err) {
@@ -135,6 +107,25 @@ function _saveBugToFile() {
 
 function _checkPermission(userId, bugUserId) {
   return userId === bugUserId;
+}
+
+function _buildCriteria(filterBy = {}) {
+  return {
+    title: { $regex: filterBy?.txt, $options: 'i' },
+    severity: { $gte: filterBy?.severity },
+  }
+}
+
+function _buildSort(sort) {
+  if (!sort.sortBy) return {}
+  return { [sort.sortBy]: sort.sortDir }
+}
+
+function _buildPagination(pageIdx) {
+  return ({
+    skip: (PAGE_SIZE * pageIdx),
+    limit: PAGE_SIZE
+  })
 }
 
 
