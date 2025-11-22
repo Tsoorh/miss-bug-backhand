@@ -1,7 +1,11 @@
+import { ObjectId } from "mongodb";
+import { dbService } from "../../services/db.service.js";
 import { loggerService } from "../../services/logger.service.js";
 import { makeId, readJsonFile, writeJsonFile } from "../../services/utils.js";
+import { asyncLocalStorage } from "../../services/als.service.js";
 
-const users = readJsonFile("./data/users.json");
+// const users = readJsonFile("./data/users.json");
+const COLLECTION = 'user'
 export const UserService = {
   query,
   getById,
@@ -12,6 +16,12 @@ export const UserService = {
 
 async function query(filterBy = {}) {
   try {
+    const criteria = _createCriteria(filterBy)
+    const collection = await dbService.getCollection(COLLECTION);
+    const userCurser = await collection.find(criteria);
+
+    const users = await userCurser.toArray();
+
     return users;
   } catch (err) {
     loggerService.error("Cannot get users: ", err);
@@ -20,10 +30,13 @@ async function query(filterBy = {}) {
 }
 
 async function getById(userId) {
+  const criteria = { _id: ObjectId.createFromHexString(userId) }
   try {
-    const userToReturn = users.find((user) => user._id === userId);
-    if (!userToReturn) throw new Error("Cannot find userby id");
-    return userToReturn;
+    const collection = await dbService.getCollection(COLLECTION);
+    const user = await collection.findOne(criteria)
+    if (!user) throw new Error("Cannot find userby id");
+
+    return user;
   } catch (err) {
     loggerService.error(`cannot find user id : ${userId}`, err);
     throw err;
@@ -31,8 +44,11 @@ async function getById(userId) {
 }
 
 async function getByUser(username) {
+  const criteria = { username }
   try {
-    const user = await users.find((user) => user.username === username);
+    const collection = await dbService.getCollection(COLLECTION);
+    const user = await collection.findOne(criteria)
+
     return user;
   } catch (err) {
     loggerService.error("cannot get user by username", err);
@@ -42,17 +58,27 @@ async function getByUser(username) {
 
 async function save(userToSave) {
   try {
+    const collection = await dbService.getCollection(COLLECTION);
     if (userToSave._id) {
-      const userIdx = users.findIndex((user) => user._id === userToSave._id);
-      if (userIdx < 0) throw new Error("Cannot find user");
-      users[userIdx] = userToSave;
+      const criteria = { _id: ObjectId.createFromHexString(userToSave._id) };
+      const user = await collection.findOne(criteria)
+      if (!user) throw new Error("Cannot find user to update");
+      const {_id,...nonIdUser} = userToSave
+      const setUser = {$set:nonIdUser}
+      const res = await collection.updateOne(criteria,setUser)
+      
+      if (res.modifiedCount === 0) throw new Error('Couldnt update user')
+
     } else {
-      userToSave._id = makeId();
       userToSave.isAdmin = false;
       userToSave.score = 20;
-      users.push(userToSave);
+      
+      const res = await collection.insertOne(userToSave)
+
+      if (!res.acknowledged) throw new Error('Couldnt insert new user')
+      
+      userToSave["_id"]= res.insertedId
     }
-    await _saveUserToFile();
     return userToSave;
   } catch (err) {
     loggerService.error("Cannot save user ", err);
@@ -61,14 +87,52 @@ async function save(userToSave) {
 }
 
 async function remove(userId) {
+  const {loggedinUser} = asyncLocalStorage.getStore();
+  const {isAdmin} = loggedinUser;
   try {
-    const userIdx = users.findIndex((user) => user._id === userId);
-    if (!userIdx) throw new Error(`Cannot remove user ${userId}`);
-    users.splice(userIdx, 1);
-    _saveUserToFile();
-  } catch (err) {}
+
+    if(!isAdmin) return 'Only admin can manage users!'
+    
+    const criteria = {_id:ObjectId.createFromHexString(userId)}
+    const collection = await dbService.getCollection(COLLECTION);
+    const res =await collection.deleteOne(criteria)
+
+    if (res.deletedCount ===0 ) throw new Error(`Cannot remove user ${userId}`);
+    
+    return userId
+  } catch (err) { 
+    loggerService.error('couldnt remove user')
+  }
 }
 
-function _saveUserToFile() {
-  writeJsonFile("./data/users.json", users);
+// function _saveUserToFile() {
+//   writeJsonFile("./data/users.json", users);
+// }
+
+
+function _createCriteria(filterBy) {
+const criteria = {}
+   if (filterBy.txt){
+    const txtCriteria = { $regex: filterBy?.txt, $options: 'i' }
+    criteria.$or=[{
+      username:txtCriteria
+    },{
+      fullname:txtCriteria
+    }]
+  }
+  if(filterBy.score){
+    criteria.score = filterBy.score
+  }
+
+  if (filterBy.isAdmin !== undefined) criteria["isAdmin"] = filterBy.isAdmin
+  return criteria;
+}
+
+// for frontend use - later 
+function getDefaultFilter() {
+  return {
+    fullname: '',
+    username: '',
+    score: 0
+  }
 }

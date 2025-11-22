@@ -1,6 +1,8 @@
+import { ObjectId } from "mongodb";
 import { loggerService } from "../../services/logger.service.js";
 import { authService } from "../auth/auth.service.js";
 import { bugService } from "./bug.service.js";
+import { asyncLocalStorage } from "../../services/als.service.js";
 
 export async function getBugs(req, res) {
   const { sortBy, sortDir, pageIdx, txt, severity, labels } = req.query;
@@ -12,7 +14,6 @@ export async function getBugs(req, res) {
     pageIdx: +pageIdx || undefined
   };
   try {
-
     const bugs = await bugService.query(filterBy, sort);
     res.send(bugs);
   } catch (err) {
@@ -46,11 +47,13 @@ export async function getBug(req, res) {
 
 export async function removeBug(req, res) {
   const { bugId } = req.params;
-  const loggedinUser = req.loggedinUser;
+  const {loggedinUser} = asyncLocalStorage.getStore()
+  // const loggedinUser = req.loggedinUser;
 
   try {
     const currentBug = await bugService.getById(bugId)
-    if (currentBug.creator._id !== loggedinUser._id && !loggedinUser.isAdmin) throw 'No permission to remove!'
+
+    if (!(currentBug.creator._id.toString() ===  loggedinUser._id || loggedinUser.isAdmin)) throw 'No permission to remove!'
 
     await bugService.remove(bugId);
     res.send("Removed successfully");
@@ -61,19 +64,19 @@ export async function removeBug(req, res) {
 }
 
 export async function saveBug(req, res) {
-  const { loggedinUser } = req;
-  if (loggedinUser._id !== req.body.creator._id && !loggedinUser.isAdmin) throw 'No permission to save bug'
+  const { loggedinUser } = asyncLocalStorage.getStore();
+  // if (loggedinUser._id !== req.body?.creator?._id.toString() || !loggedinUser.isAdmin) throw 'No permission to save bug'
 
   const bugToSave = {
-    _id: req.body._id || null,
+    _id: req.body?._id || null,
     title: req.body.title,
     severity: +req.body.severity,
     description: req.body.description,
     createdAt: +req.body.createdAt,
     labels: req.body.labels,
     creator: {
-      _id: req.body.creator._id || null,
-      fullname: req.body.creator.fullname || null
+      _id: req.body?.creator?._id || loggedinUser._id,
+      fullname: req.body?.creator?.fullname || loggedinUser.fullname 
     }
   };
   try {

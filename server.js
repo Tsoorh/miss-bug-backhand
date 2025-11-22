@@ -7,6 +7,8 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import { loggerService } from "./services/logger.service.js";
 import { bugService } from "./api/bug/bug.service.js";
+import { setupAsyncLocalStorage } from "./middlewares/setupAls.middleware.js";
+import path from 'path';
 
 
 const app = express();
@@ -24,16 +26,18 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.set('query parser', 'extended');
-
+app.use(setupAsyncLocalStorage)
 
 
 import { bugRoutes } from "./api/bug/bug.routes.js";
 import { userRoutes } from "./api/user/user.routes.js";
 import { authRoutes } from "./api/auth/auth.routes.js";
+import { msgRoutes } from "./api/msg/msg.route.js";
 
 app.use('/api/bug',bugRoutes)
 app.use('/api/user',userRoutes)
 app.use('/api/auth',authRoutes)
+app.use('/api/msg',msgRoutes)
 
 
 
@@ -53,6 +57,7 @@ app.get("/set-cookies", async (req, res) => {
 app.get('/*all', (req, res) => {
     res.sendFile(path.resolve('public/index.html'))
 })
+
 const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`Server ready at port ${port}` ));
 

@@ -380,3 +380,135 @@
 20.11.2025, 20:35:51 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
 20.11.2025, 20:37:48 - ERROR - TypeError: collection.findOne is not a function
 20.11.2025, 20:37:48 - ERROR - couldn't get bug 691ece2254cf5f31f7873581 | TypeError: collection.findOne is not a function
+21.11.2025, 9:46:04 - INFO - User login: {"_id":"RjeMo8","fullname":"Tsoor Hartov","score":20,"isAdmin":false}
+21.11.2025, 9:46:47 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | No permission to remove!
+21.11.2025, 9:49:20 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | No permission to remove!
+21.11.2025, 11:33:10 - INFO - User login: {"_id":"691ec9e354cf5f31f787356e","fullname":"Tsoor Hartov","score":20,"isAdmin":false}
+21.11.2025, 11:33:35 - ERROR - Error: Cannot find bug
+21.11.2025, 11:33:35 - ERROR - couldn't remove bug 691ec9e354cf5f31f787356e | Error: Cannot find bug
+21.11.2025, 11:34:56 - ERROR - Error: Cannot find bug
+21.11.2025, 11:34:56 - ERROR - couldn't remove bug 691ec9e354cf5f31f787356e | Error: Cannot find bug
+21.11.2025, 11:36:13 - ERROR - Error: Cannot find bug
+21.11.2025, 11:36:13 - ERROR - couldn't remove bug 691ec9e354cf5f31f787356e | Error: Cannot find bug
+21.11.2025, 11:36:47 - ERROR - Error: Cannot find bug
+21.11.2025, 11:36:47 - ERROR - couldn't remove bug 691ec9e354cf5f31f787356e | Error: Cannot find bug
+21.11.2025, 11:37:37 - ERROR - Error: Cannot find bug
+21.11.2025, 11:37:37 - ERROR - couldn't remove bug 691ec9e354cf5f31f787356e | Error: Cannot find bug
+21.11.2025, 11:38:17 - ERROR - couldn't remove bug 691ec9e354cf5f31f787356e | Error: Cannot find bug
+21.11.2025, 11:38:17 - ERROR - Error: Cannot find bug
+21.11.2025, 11:39:50 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | No permission to remove!
+21.11.2025, 11:41:07 - INFO - User login: {"_id":"691ec9e354cf5f31f787356e","fullname":"Tsoor Hartov","score":20,"isAdmin":false}
+21.11.2025, 11:44:13 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | No permission to remove!
+21.11.2025, 11:46:21 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | ReferenceError: ObjectId is not defined
+21.11.2025, 11:46:47 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | ReferenceError: ObjectId is not defined
+21.11.2025, 11:48:01 - ERROR - couldn't remove bug 691ece2254cf5f31f7873576 | ReferenceError: ObjectId is not defined
+21.11.2025, 13:26:32 - INFO - User login: {"_id":"691ec9e354cf5f31f787356e","fullname":"Tsoor Hartov","score":20,"isAdmin":false}
+21.11.2025, 13:33:27 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | ReferenceError: ObjectId is not defined
+21.11.2025, 13:35:53 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | ReferenceError: ObjectId is not defined
+21.11.2025, 13:36:12 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+21.11.2025, 13:36:36 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+21.11.2025, 13:36:50 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+21.11.2025, 13:38:21 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+21.11.2025, 13:38:33 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | No permission to remove!
+21.11.2025, 13:38:56 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | No permission to remove!
+21.11.2025, 13:40:05 - ERROR - couldn't remove bug 691ece2254cf5f31f7873581 | No permission to remove!
+22.11.2025, 7:56:39 - INFO - User login: {"_id":"691ec9e354cf5f31f787356e","fullname":"Tsoor Hartov","score":20,"isAdmin":false}
+22.11.2025, 7:57:51 - ERROR - couldn't remove bug 691ece2254cf5f31f7873580 | No permission to remove!
+22.11.2025, 7:58:33 - ERROR - couldn't remove bug 691ece2254cf5f31f787357c | No permission to remove!
+22.11.2025, 7:59:31 - ERROR - couldn't remove bug 691ece2254cf5f31f787357c | No permission to remove!
+22.11.2025, 8:02:04 - ERROR - couldn't remove bug 691ece2254cf5f31f787357c | No permission to remove!
+22.11.2025, 8:02:56 - ERROR - couldn't remove bug 691ece2254cf5f31f787357c | TypeError: Cannot destructure property 'loggedinUser' of 'asyncLocalStorage.getStore(...)' as it is undefined.
+22.11.2025, 8:04:56 - ERROR - Error: Only the creator can delete bug!
+22.11.2025, 8:04:56 - ERROR - couldn't remove bug 691ece2254cf5f31f787357c | Error: Only the creator can delete bug!
+22.11.2025, 8:06:01 - ERROR - Error: Only the creator can delete bug!
+22.11.2025, 8:06:01 - ERROR - couldn't remove bug 691ece2254cf5f31f787357c | Error: Only the creator can delete bug!
+22.11.2025, 8:09:01 - INFO - User login: {"_id":"691ec9e354cf5f31f7873575","fullname":"moon","score":20,"isAdmin":false}
+22.11.2025, 8:10:02 - ERROR - couldn't remove bug 691ece2254cf5f31f787357b | No permission to remove!
+22.11.2025, 8:40:43 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 9:18:16 - INFO - User login: {"_id":"691ec9e354cf5f31f7873575","fullname":"moon","score":20,"isAdmin":false}
+22.11.2025, 9:36:20 - INFO - User login: {"_id":"691ec9e354cf5f31f7873575","fullname":"moon","score":20,"isAdmin":false}
+22.11.2025, 9:36:34 - ERROR - couldn't login  | Unknown user
+22.11.2025, 9:55:29 - INFO - User login: {"_id":"691ec9e354cf5f31f7873575","fullname":"moon","score":20,"isAdmin":false}
+22.11.2025, 10:03:45 - ERROR - Error: Not your bug!
+22.11.2025, 10:03:45 - ERROR - Error: Not your bug!
+22.11.2025, 10:04:18 - ERROR - Error: Not your bug!
+22.11.2025, 10:04:18 - ERROR - Error: Not your bug!
+22.11.2025, 10:04:48 - ERROR - Error: Not your bug!
+22.11.2025, 10:04:48 - ERROR - Error: Not your bug!
+22.11.2025, 10:05:03 - ERROR - Error: Not your bug!
+22.11.2025, 10:05:03 - ERROR - Error: Not your bug!
+22.11.2025, 10:06:13 - ERROR - Error: Not your bug!
+22.11.2025, 10:06:13 - ERROR - Error: Not your bug!
+22.11.2025, 10:06:49 - ERROR - Error: Not your bug!
+22.11.2025, 10:06:49 - ERROR - Error: Not your bug!
+22.11.2025, 10:08:02 - ERROR - Error: Not your bug!
+22.11.2025, 10:08:02 - ERROR - Error: Not your bug!
+22.11.2025, 10:09:29 - ERROR - Error: Not your bug!
+22.11.2025, 10:09:29 - ERROR - Error: Not your bug!
+22.11.2025, 10:10:02 - ERROR - Error: Not your bug!
+22.11.2025, 10:10:02 - ERROR - Error: Not your bug!
+22.11.2025, 10:15:40 - INFO - User login: {"_id":"691ec9e354cf5f31f7873575","fullname":"moon","score":20,"isAdmin":false}
+22.11.2025, 10:16:00 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:16:00 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:20:44 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:20:44 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:22:06 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:22:06 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:23:03 - ERROR - TypeError: bugToSave.creator._id.equals is not a function
+22.11.2025, 10:23:03 - ERROR - TypeError: bugToSave.creator._id.equals is not a function
+22.11.2025, 10:25:44 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:25:44 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:26:46 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:26:45 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:29:04 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:29:04 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:31:44 - INFO - User login: {"_id":"691ec9e354cf5f31f7873575","fullname":"moon","score":20,"isAdmin":false}
+22.11.2025, 10:32:17 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:32:17 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 10:32:37 - ERROR - MongoServerError: Plan executor error during update :: caused by :: Performing an update on the path '_id' would modify the immutable field '_id'
+22.11.2025, 10:32:37 - ERROR - MongoServerError: Plan executor error during update :: caused by :: Performing an update on the path '_id' would modify the immutable field '_id'
+22.11.2025, 11:18:10 - INFO - User login: {"_id":"691ec9e354cf5f31f7873574","fullname":"admin","score":20,"isAdmin":true}
+22.11.2025, 11:19:02 - ERROR - Cannot get users:  | MongoServerError: $regex has to be a string
+22.11.2025, 11:19:02 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:26:59 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:26:59 - ERROR - Cannot get users:  | MongoServerError: $regex has to be a string
+22.11.2025, 11:27:18 - ERROR - Cannot get users:  | MongoServerError: $regex has to be a string
+22.11.2025, 11:27:18 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:27:36 - ERROR - Cannot get users:  | MongoServerError: $regex has to be a string
+22.11.2025, 11:27:36 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:27:53 - ERROR - Cannot get users:  | MongoServerError: $regex has to be a string
+22.11.2025, 11:27:53 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:28:27 - ERROR - Cannot get users:  | TypeError: Cannot read properties of undefined (reading 'toString')
+22.11.2025, 11:28:27 - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+22.11.2025, 11:29:26 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:29:26 - ERROR - Cannot get users:  | MongoServerError: $regex has to be a string
+22.11.2025, 11:34:30 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 11:35:29 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 11:36:37 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 11:36:55 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 11:37:08 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 11:37:11 - ERROR - couldnt validateToken: | Error: value must not be null or undefined
+22.11.2025, 11:40:19 - INFO - User login: {"_id":"691ec9e354cf5f31f7873574","fullname":"admin","score":20,"isAdmin":true}
+22.11.2025, 11:53:16 - ERROR - couldn't register  | TypeError: Cannot destructure property 'username' of 'credentials' as it is undefined.
+22.11.2025, 11:54:24 - ERROR - couldn't register  | TypeError: Cannot destructure property 'username' of 'credentials' as it is undefined.
+22.11.2025, 11:55:17 - INFO - User signup -  | {"fullname":"gugu","username":"gugu","password":"$2b$10$koKIPXkYt9S.8Wo3Mot8fe.yu8aDO.j8meTmuupUC83YK6EWL2jyG","isAdmin":false,"score":20,"_id":"692188854e1e38af7f98c701"}
+22.11.2025, 11:56:09 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 11:57:07 - INFO - User login: {"_id":"691ec9e354cf5f31f7873574","fullname":"admin","score":20,"isAdmin":true}
+22.11.2025, 12:06:13 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 12:07:09 - ERROR - MongoServerError: $regex has to be a string
+22.11.2025, 12:08:10 - INFO - User login: {"_id":"691ec9e354cf5f31f7873574","fullname":"admin","score":20,"isAdmin":true}
+22.11.2025, 12:32:21 - INFO - User login: {"_id":"691ec9e354cf5f31f7873574","fullname":"admin","score":20,"isAdmin":true}
+22.11.2025, 12:39:43 - ERROR - Cannot save user  | MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 12:39:43 - ERROR - MongoInvalidArgumentError: Update document requires atomic operators
+22.11.2025, 12:42:59 - ERROR - couldn't register  | TypeError: Cannot destructure property 'username' of 'credentials' as it is undefined.
+22.11.2025, 12:43:25 - INFO - User signup -  | {"username":"jhon","fullname":"jhon","password":"$2b$10$4Nv81Ajjw6c.wUWIk4QPUu5ggEXomze7LV.fKdE7P6X9jno4wz5Py","isAdmin":false,"score":20,"_id":"692193cd7447bb71a62f32ce"}
+22.11.2025, 12:43:43 - INFO - User signup -  | {"username":"amy","fullname":"amy","password":"$2b$10$h8MIAayP2pvq3SyufB8nfOZotGz6m5.4FWVdvMEIltc/5itbKMyUy","isAdmin":false,"score":20,"_id":"692193df7447bb71a62f32cf"}
+22.11.2025, 12:43:43 - ERROR - couldn't register  | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+22.11.2025, 12:49:24 - ERROR - couldn't login  | Error: data and hash arguments required
+22.11.2025, 12:49:38 - INFO - User login: {"_id":"692193cd7447bb71a62f32ce","fullname":"jhon","score":20,"isAdmin":false}
+22.11.2025, 12:51:36 - INFO - User login: {"_id":"691ec9e354cf5f31f7873574","fullname":"admin","score":20,"isAdmin":true}
+22.11.2025, 12:52:20 - ERROR - couldn't register  | TypeError: Cannot destructure property 'username' of 'credentials' as it is undefined.
+22.11.2025, 12:52:43 - ERROR - couldn't register  | TypeError: Cannot destructure property 'username' of 'credentials' as it is undefined.
+22.11.2025, 12:52:55 - ERROR - couldn't register  | Username already exist !
+22.11.2025, 12:53:31 - INFO - User signup -  | {"username":"july","password":"$2b$10$SZYhT5BYlCJLK3xXTol4Cuwq06HH5Hq50bsiPX3vBbOCONGpRLEv2","fullname":"jul jul","isAdmin":false,"score":20,"_id":"6921962bc9a34453528b1c64"}
+22.11.2025, 12:54:11 - INFO - User signup -  | {"username":"frank","password":"$2b$10$DPwvUIZykzNRD0YKiMlJ0e3KspzAf4HThZ5mcWhfxJmsa9uK0Zj1.","fullname":"frankie frank","isAdmin":false,"score":20,"_id":"69219653c9a34453528b1c65"}

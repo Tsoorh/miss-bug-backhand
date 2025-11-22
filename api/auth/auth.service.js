@@ -50,12 +50,12 @@ async function login(username, password) {
 }
 
 async function signup(credentials) {
+  console.log("🚀 ~ signup ~ credentials:", credentials)
   const saltRounds = 10;
   const { username, password, fullname } = credentials
   if (!username || !password || !fullname) throw 'Missing required signup information'
 
   const userExist = await UserService.getByUser(username);
-  console.log("🚀 ~ signup ~ userExist:", userExist)
   if (userExist) throw "Username already exist !";
 
   const hash = await bcrypt.hash(credentials.password, saltRounds);

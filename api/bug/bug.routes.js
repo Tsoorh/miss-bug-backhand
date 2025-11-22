@@ -1,6 +1,7 @@
 import express from 'express';
 import { getBug, getBugs, getPDF, removeBug, saveBug } from './bug.controller.js';
 import { requireAuth } from '../../middlewares/require-auth.middleware.js';
+import { setupAsyncLocalStorage } from '../../middlewares/setupAls.middleware.js';
 
 
 const router = express.Router()

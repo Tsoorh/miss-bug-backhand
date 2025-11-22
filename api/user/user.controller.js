@@ -31,7 +31,7 @@ export async function saveUser(req,res){
         res.send(user);
     } catch (err) {
         loggerService.error(err)
-        res.status(400).send("Cannot save bug");
+        res.status(400).send("Cannot save user");
     }
 }
 
@@ -39,10 +39,10 @@ export async function removeUser(req,res) {
     try {
         const {userId} =req.params;
         await UserService.remove(userId);
-        res.send(`Removed successfully, bug Id - ${userId}`);
+        res.send(`Removed successfully, user Id - ${userId}`);
     } catch (err) {
         loggerService.error(err);
-        res.status(400).send(`Cannot remove bug `);
+        res.status(400).send(`Cannot remove user `);
     }
     
 }

@@ -6,7 +6,9 @@ import {
   writePDF,
 } from "../../services/utils.js";
 import { dbService } from "../../services/db.service.js";
-import { ObjectId } from "mongodb";
+import { Collection, ObjectId } from "mongodb";
+import { setupAsyncLocalStorage } from "../../middlewares/setupAls.middleware.js";
+import { asyncLocalStorage } from "../../services/als.service.js";
 
 
 const COLLECTION = 'bug'
@@ -28,14 +30,14 @@ async function query(filterBy = {}, sortBy = {}) {
     const criteria = _buildCriteria(filterBy)
     const sort = _buildSort(sortBy)
     const collection = await dbService.getCollection(COLLECTION)
-    let bugsCurser = await collection.find(criteria,{sort}) // {sort} equals {sort:sort}     
-    
-    if (filterBy?.pageIdx !== undefined){
+    let bugsCurser = await collection.find(criteria, { sort }) 
+
+    if (filterBy?.pageIdx !== undefined) {
       const pagination = _buildPagination(pageIdx)
-      bugsCurser =await bugs.skip(pagination.skip).limit(pagination.limit)
+      bugsCurser = await bugs.skip(pagination.skip).limit(pagination.limit)
     }
     const bugs = await bugsCurser.toArray();
-    
+
     return bugs
   } catch (err) {
     loggerService.error(err);
@@ -45,7 +47,8 @@ async function query(filterBy = {}, sortBy = {}) {
 async function getById(bugId) {
   try {
     const collection = await dbService.getCollection(COLLECTION)
-    let bug = await collection.findOne({"_id":ObjectId.createFromHexString(bugId)})
+    const criteria = { _id: ObjectId.createFromHexString(bugId) }
+    let bug = await collection.findOne(criteria)
     if (!bug) throw new Error("Cannot find bug");
     return bug;
   } catch (err) {
@@ -54,35 +57,62 @@ async function getById(bugId) {
   }
 }
 async function remove(bugId) {
-  try {
-    const bugIdx = bugs.findIndex((bug) => bug._id === bugId);
-    if (bugIdx < 0) throw new Error("Cannot find bug to remove");
-    bugs.splice(bugIdx, 1);
-    await _saveBugToFile();
-  } catch (err) {
-    loggerService.error(err);
-    throw err;
-  }
-}
-async function save(bugToSave) {
+  const { loggedinUser } = asyncLocalStorage.getStore()
+  const { _id: creatorId, isAdmin } = loggedinUser
 
   try {
-    if (bugToSave._id) {
-      const bugIdx = bugs.findIndex((bug) => bug._id === bugToSave._id);
-      if (bugIdx < 0) throw new Error("Cannot find bug");
-      bugs[bugIdx] = bugToSave;
-    } else {
-      bugToSave._id = makeId();
-      bugs.push(bugToSave);
-    }
-    await _saveBugToFile();
+    const collection = await dbService.getCollection(COLLECTION)
+    const criteria = { _id: ObjectId.createFromHexString(bugId) }
+
+    if (!isAdmin) criteria["creator._id"] = ObjectId.createFromHexString(creatorId);
+
+
+    const res = await collection.deleteOne(criteria)
+
+    if (res.deletedCount === 0) throw new Error(`Only the creator can delete bug!`)
+
+    return bugId;
   } catch (err) {
     loggerService.error(err);
     throw err;
   }
 }
+
+async function save(bugToSave) {
+  const { loggedinUser } = asyncLocalStorage.getStore();
+  const { _id: creatorId, isAdmin } = loggedinUser;
+
+  try {
+    const collection = await dbService.getCollection(COLLECTION);
+    if (bugToSave._id) {
+
+
+      if (!(bugToSave.creator._id === creatorId || isAdmin)) throw new Error('Not your bug!')
+      const criteria = { _id: ObjectId.createFromHexString(bugToSave._id) } // not sure if already in HexString... test soon
+      
+      const { _id, ...bugWithoutId } = bugToSave
+      const setBug = { $set: bugWithoutId }
+      const res = await collection.updateOne(criteria, setBug)
+
+      if (res.modifiedCount === 0) throw new Error('Couldnt update bug')
+        
+      bugToSave._id = _id;
+    } else {
+      const res = await collection.insertOne(bugToSave)
+      if (res.acknowledged) bugToSave["_id"] = res.insertedId;
+    }
+
+    return bugToSave;
+  } catch (err) {
+    loggerService.error(err);
+    throw err;
+  }
+}
+
 async function createPDF(res) {
   let table = { headers: [], rows: [] };
+  const collection = await dbService.getCollection(COLLECTION)
+  const bugs = await collection.find({});
   if (bugs.length === 0) {
     throw new Error("No bugs to export");
   }
@@ -101,6 +131,7 @@ async function getThreeIds() {
 
   return b3Id;
 }
+
 function _saveBugToFile() {
   writeJsonFile("./data/bugs.json", bugs);
 }
@@ -110,10 +141,22 @@ function _checkPermission(userId, bugUserId) {
 }
 
 function _buildCriteria(filterBy = {}) {
-  return {
-    title: { $regex: filterBy?.txt, $options: 'i' },
-    severity: { $gte: filterBy?.severity },
+  const criteria = {};
+  if(filterBy.txt){
+    const txtCriteria = { $regex: filterBy?.txt, $options: 'i' }
+    criteria.$or = [{
+      username: txtCriteria
+    },{
+      fullname: txtCriteria
+    }]
   }
+  if (filterBy.severity){
+    criteria.severity = { $gte: filterBy?.severity }
+  }
+  if(filterBy.ownerId){
+    criteria.creator._id = filterBy.ownerId
+  }
+  return criteria
 }
 
 function _buildSort(sort) {
@@ -127,5 +170,7 @@ function _buildPagination(pageIdx) {
     limit: PAGE_SIZE
   })
 }
+
+
 
 
