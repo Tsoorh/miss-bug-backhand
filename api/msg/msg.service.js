@@ -1,6 +1,6 @@
 import { ObjectId } from "mongodb"
-import { dbService } from "../../services/db.service"
-import { loggerService } from "../../services/logger.service"
+import { dbService } from "../../services/db.service.js"
+import { loggerService } from "../../services/logger.service.js"
 
 const COLLECTION = 'msg'
 
