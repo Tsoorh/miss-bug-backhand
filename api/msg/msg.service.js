@@ -32,7 +32,7 @@ async function query(filterBy = {}) {
 async function getById(msgId) {
     try {
         const collection = await dbService.getCollection(COLLECTION)
-        const criteria = { _id: ObjectId.createFromHexStringe(msgId) }
+        const criteria = { _id: ObjectId.createFromHexString(msgId) }
 
         const msg = await collection.findOne(criteria)
         if (!msg) throw new Error('No msg was found!')
@@ -44,6 +44,7 @@ async function getById(msgId) {
     }
 }
 async function remove(msgId) {
+    console.log("🚀 ~ remove ~ msgId:", msgId)
     try {
         const collection = await dbService.getCollection(COLLECTION)
         const criteria = { _id: ObjectId.createFromHexString(msgId) }
@@ -77,8 +78,7 @@ async function update(msg) {
         const collection = await dbService.getCollection(COLLECTION)
         const criteria = { _id: ObjectId.createFromHexString(msg._id) }
 
-        const { _id, ...msgToSet } = msg;
-        const setMsg = { $set: msgToSet }
+        const setMsg = { $set: {txt:msg.txt} }
 
         const res = await collection.updateOne(criteria, setMsg);
         if (res.modifiedCount === 0) throw new Error('couldnt update msg')
@@ -135,10 +135,13 @@ async function _createAggergateMsg(msg) {
         $project: {
             _id: 1,
             txt: 1,
-            aboutBug: 1,
-            ByUser: 1
+            "aboutBug._id":1,
+            "aboutBug.title":1,
+            "aboutBug.severity":1,
+            "ByUser._id":1,
+            "ByUser.fullname":1,
+            }
         }
-    }
     const pipeline =[match,lookupUser,unwindUser,lookupBug,unwindBug,project]
     const collection = await dbService.getCollection(COLLECTION)
     const agrMsg = await collection.aggregate(pipeline)

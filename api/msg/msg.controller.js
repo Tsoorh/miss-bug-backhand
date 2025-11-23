@@ -1,3 +1,5 @@
+import { ObjectId } from "mongodb";
+import { asyncLocalStorage } from "../../services/als.service.js";
 import { loggerService } from "../../services/logger.service.js";
 import { msgService } from "./msg.service.js";
 
@@ -30,8 +32,8 @@ export async function getMsg(req, res) {
 export async function removeMsg(req, res) {
     const { msgId } = req.params
     try {
-        const msgId = await msgService.remove(msgId)
-        res.json(msgId);
+        const id = await msgService.remove(msgId)
+        res.json(id);
     } catch (err) {
         loggerService.error(err)
         res.status(400).send('Couldnt remove message!')
@@ -40,13 +42,22 @@ export async function removeMsg(req, res) {
 
 export async function saveMsg(req, res) {
     const msg = req.body
+    const {loggedinUser} = await asyncLocalStorage.getStore()
+    const {aboutBugId} = msg
+    const byUserId = loggedinUser._id
+    
+    msg.byUserId = ObjectId.createFromHexString(byUserId)
+    msg.aboutBugId = ObjectId.createFromHexString(aboutBugId)
+    var msgRes = msg;
     try {
         if (msg._id) {
-            const msg = await msgService.update(msg);
+            msgRes = await msgService.update(msg);
         } else {
-            const msg = await msgService.add(msg);
+            console.log("inElse");
+            msgRes = await msgService.add(msg);
         }
-        res.json(msg)
+        console.log("🚀 ~ saveMsg ~ msgRes:", msgRes)
+        res.json(msgRes)
     } catch (err) {
         loggerService.error(err)
         res.status(400).send('Couldnt save message!')
